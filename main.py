@@ -11,7 +11,7 @@ uploaded_file = st.file_uploader("Upload xlsx", type="xlsx")
 
 # uploadファイルが存在するときだけ、csvファイルの読み込みがされる。
 if uploaded_file is not None:
-    dataframe = pd.read_excel(uploaded_file, comment="#")
+    dataframe = pd.read_excel(uploaded_file)
     
     #国を選ぶセレクトボックス追加   
     selected_country = st.selectbox("Choose Country", ["ALL","USA", "JAPAN"])
