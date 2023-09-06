@@ -6,11 +6,11 @@ import datetime
 st.title('Skygo')
 
 # ファイルアップローダーの準備
-uploaded_file = st.file_uploader("Upload csv UTF-8", type="csv")
+uploaded_file = st.file_uploader("Upload csv UTF-8", type="xlsx")
 
 # uploadファイルが存在するときだけ、csvファイルの読み込みがされる。
 if uploaded_file is not None:
-    dataframe = pd.read_csv(uploaded_file)
+    dataframe = pd.read_xlsx(uploaded_file)
     
     #国を選ぶセレクトボックス追加   
     selected_country = st.selectbox("Choose Country", ["ALL","USA", "JAPAN"])
