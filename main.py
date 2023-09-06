@@ -2,12 +2,11 @@ import streamlit as st
 import pandas as pd
 import datetime
 
-
 # ページのタイトル（なくてもいい）
 st.title('Skygo')
 
 # ファイルアップローダーの準備
-uploaded_file = st.file_uploader("Upload xlsx", type="csv")
+uploaded_file = st.file_uploader("Upload csv UTF-8", type="csv")
 
 # uploadファイルが存在するときだけ、csvファイルの読み込みがされる。
 if uploaded_file is not None:
