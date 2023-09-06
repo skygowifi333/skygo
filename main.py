@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
-import openpyxl
+
 
 # ページのタイトル（なくてもいい）
 st.title('Skygo')
